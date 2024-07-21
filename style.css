@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+/* head */
+.logo{
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+header p a{
+  background-color: #fff;
+  color: #333;
+  display: inline;
+  padding: 7px 15px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+/* body */
+article {
+    background-color: rgba(70, 70, 70, 0.39);
+    border: 1px solid rgb(133, 131, 131);
+    width: 85%;
+    margin: 40px auto;
+    min-height: 10px;
+    border-radius: 13px;
+}
+
+.particles{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0 40px 45px;
+    color: #fff;  
+}
+
+.part{
+    
+    width: 59%;
+   
+} 
+
+.part h1{
+    font-size: 50px;
+    margin-bottom: 37px;
+}
+
+.part h6{
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+.but a{
+    display: inline-block;
+}
+
+.but > :nth-child(1 of a){
+    margin-right: 10px;
+    padding: 7px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #111111;
+    background-color: #fff;
+}
+
+.but > :nth-child(2 of a){
+    text-decoration: none;
+    padding: 7px 22px;
+    border-radius: 14px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid;
+}
+
+article .image img{
+    width: 70%;
+    margin-left: 90px;
+}
+
+@media (max-width:500px) {
+
+    header{
+       margin-bottom: 100px;
+    }
+ header ul{
+    position: absolute;
+    top: 10%;
+    right: 20px;
+    display: block;
+ }
+
+ ul li:hover a{
+    color: #fff;
+    background-color: #8000ff;
+ }
+
+    .particles{
+        margin-top: px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .particles .part{
+        order: 2;
+    }
+    .particles .image {
+        width: 50%;
+        margin-right: auto;
+    }
+
+    .part{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .part h1{
+        font-size: 30px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .part h6{
+        width: 90%;
+        text-align: center;
+    }
+
+    .but{
+        margin-right: 30px;
+    }
+}
